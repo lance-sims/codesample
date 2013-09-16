@@ -1,0 +1,18 @@
+<div id="nameForm">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    </div>
+    <form name="frmUserName">
+        <div class="control-group">
+            <label class="control-label">What is your name?</label>
+            <input type="text" class="input-medium" placeholder="John Doe" ng-model="frmUserName.userName" required="">
+            <button class="btn btn-success" ng-click="saveUser(frmUserName)">Next</button>
+        </div>
+    </form>
+
+    <div class="modal-footer">
+        <!--<button class="btn btn-success" ng-click="saveMoneyData({serialNumber: serialNumber, lat: model.geoLat,
+        lon: model.geoLon, codedLocation: model.generalAddress})">Save</button>-->
+
+    </div>
+</div>

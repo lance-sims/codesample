@@ -1,0 +1,2 @@
+This code sample shows the use of Google Geolocation API with Twitter Bootstrap, Angular, Mongo, and Express.  Most
+of the code to work with the Google Geolocation API is in the public/js/services.js file

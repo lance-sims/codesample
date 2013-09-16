@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap-responsive.min.css"/>
+    <style>
+        .row {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact"></a></li>
+                    </ul>
+                </div><!-- / .nav collapse -->
+            </div>
+        </div>
+    </div>
+<!-- end header nav -->
+
+<div ng-controller="MainCtrl">
+    <ng-view></ng-view>
+</div>
+
+
+<hr/>
+<footer>
+    <p>&copy; binarygiant</p>
+</footer>
+<!-- included share modal -->
+</body>
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular-resource.min.js"></script>-->
+<script type="text/javascript" src="/vendor/angular/angular.min.js"></script>
+<script type="text/javascript" src="/vendor/angular/angular-resource.js"></script>
+<script type="text/javascript" src="/vendor/angular/angular-ui.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/services.js"></script>
+<script type="text/javascript" src="js/controllers.js"></script>
+<script type="text/javascript" src="js/filters.js"></script>
+<script type="text/javascript" src="js/directives.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDhaBJ-DuYpF2NjUCe0GLczDwqdb0zc2mA&sensor=false"></script>
+<script type="text/javascript" src="/vendor/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/vendor/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+</html>

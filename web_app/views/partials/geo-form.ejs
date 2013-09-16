@@ -1,0 +1,31 @@
+<div>
+    <form name="frmSelfEntered">
+        <input id="city_region" type="text" class="input-large" required="" ng-model="city" placeholder="City/Region/Postal Code">
+        <button class="btn btn-primary" ng-click="codeSelfEntered(city)">Map It</button>
+    </form>
+    <button class="btn btn-primary" ng-click="getGeoLocation()">Use My Location</button>
+
+    <!-- show this table if there are several matches to the general address search-->
+    <div>
+        <table class="table table-striped table-hover">
+            <thead>Possilbe Locations</thead>
+            <tr ng-repeat="location in model.possibleLocations" ng-click="setSelected();">
+                <td>{{location}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="pagination-centered">
+        <!-- map section -->
+        <div id="map_canvas" ui-map="gMap"
+             class="pagination-centered"
+             style="height:200px;width:350px;border:2px solid #777777;margin:3px; border:1px solid;"
+             ui-options="mapOptions"
+             ui-event="{'map-idle' : 'onMapIdle()'}"
+                >
+        </div>
+        <!--<div class="alert alert-info">
+            <span>{{model.generalAddress}}</span>
+        </div>-->
+    </div>
+</div>
